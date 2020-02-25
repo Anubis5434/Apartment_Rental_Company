@@ -1,5 +1,12 @@
 # README #
 
+## Group 6 (C3) ##
+
+* Jinxue Li (ljinxue)
+* Nishan He (nishanh)
+* Sanjay Renduchintala (vrenduch)
+* Yu Xia (yxia2)
+
 ### Summary ###
 
 This project aims to create a customized search platform for college students to find
