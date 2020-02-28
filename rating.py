@@ -29,12 +29,12 @@ def data_rating(data, price_lb, price_ub):
         data_restaurant_distance.append(mean2)
     data["restaurant_rating"] = pd.Series(data_restaurant_rating)
     data["restaurant_distance"] = pd.Series(data_restaurant_distance)
-    data["restaurant_distance_rating"] = 1 - ((data.restaurant_distance - data.restaurant_distance.min()) \
+    data["restaurant_distance_rating"] = 1 - ((data.restaurant_distance - data.restaurant_distance.min()) /
                                         (data.restaurant_distance.max() - data.restaurant_distance.min()))
     data["total_rating"] = round(2.5 * data["rating_CMU_walking"] + 4 * data["rating_CMU_bus_time"] +
                                  1 * data["rating_CMU_downtown"] + 1 * (data["restaurant_rating"] / 5) +
                                  1.5 * data["restaurant_distance_rating"], 1)
-    data = [['neighborhood', 'post title', 'number bedrooms', 'sqft', 'price', 'distance_to_CMU', 'duration_CMU',
+    data = data[['neighborhood', 'post title', 'number bedrooms', 'sqft', 'price', 'distance_to_CMU', 'duration_CMU',
              'bus_distance_CMU', 'distance_to_downtown', 'duration_downtown', 'bus_distance_downtown',
              'nearest_shuttle_stop', 'nearest_restaurants', 'restaurant_distance', 'total_rating']]
 
