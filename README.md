@@ -1,11 +1,11 @@
 # README #
 
-## Group 6 (C3) ##
+## Contributor ##
 
-* Jinxue Li (ljinxue)
-* Nishan He (nishanh)
-* Sanjay Renduchintala (vrenduch)
-* Yu Xia (yxia2)
+* Jinxue Li
+* Nishan He
+* Sanjay Renduchintala
+* Yu Xia
 
 ### Summary ###
 
